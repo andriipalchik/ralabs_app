@@ -1,0 +1,28 @@
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Megrim|Raleway" rel="stylesheet">
+
+<div class="container-fluid header">
+  <div class="col-md-12">
+      <a href="/home">
+        <span style="font-family: 'Megrim'; color:white; font-size: 48pt;">Ralabs App</span>
+      </a>
+  </div>
+</div>
+
+<div class="container-fluid show">
+  <div class="row">
+      <div class="col-md-12 message"> 
+          <h2 class="body">Message</h2><p class="body"> <%= @message.body %></p>
+        <div class="col-md-12 actions new-message">
+            <%= link_to 'Reply', root_url + '/messages/#{:id}' %>
+        </div>
+    </div> 
+  </div>
+    <div class="row footer">
+      <div class="col-md-12">
+        <p class="disclaimer">This message has been deleted. 
+        Once you leave this page, you will not be able to open it again.</p>       
+        </div>
+    </div>
+</div>
